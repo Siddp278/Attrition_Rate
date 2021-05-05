@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'web4.css' %}">
+  <title>Feedback Page</title>
+  <link rel="stylesheet" href="{% static 'page4.css' %}">
+</head>
+<body bgcolor="fcf876">
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="{% static '#hero' %}"><h1><span>e</span>Vantage</h1></a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger"><div class="bar"></div></div>
+          <ul>
+            <li><a href="http://127.0.0.1:8000/" data-after="Home">Home</a></li>
+            <li><a href="/home" data-after="About">About</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+  
+  
+   <!-- Question Section -->
+  <section id="Question">
+    <div class="Question container">
+      <nav>
+          <li><a href="{% static '#' %}"><h3>Customer Care</h3></a></li>
+	</nav>
+    <nav>
+        <li><a href="/login_page" data-after="Login"><h3>Click here to Login</h3></a></li>
+    </nav>
+    <nav>
+          <li><a href="http://www.linkedin.com/in/siddharth-patra-6579401b0"><h3>Visit the creator</h3></a></li>
+    </nav>
+    </div>
+  </section>
+  <!-- End Question Section -->
+  
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand"><h1><span>e</span>Vantage</div>
+      <h2>Your Complete Attrition Solution</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="{% static '#' %}"><img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="{% static '#' %}"><img src="https://www.iconsdb.com/icons/preview/black/instagram-xxl.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="{% static '#' %}"><img src="https://www.flaticon.com/svg/static/icons/svg/124/124021.svg"/></a>
+        </div>
+        
+      </div>
+      
+    </div>
+  </section>
+  <!-- End Footer -->
+</body>
+</html>
+  

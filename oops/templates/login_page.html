@@ -1,0 +1,59 @@
+<html>
+{% load staticfiles %}
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="description" content="Login - Register Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <style>
+        body {
+            background-color: rgb(4, 47, 102);
+            /*background: url();*/
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container-login">
+        <div id="title" class="section-title">
+            Log<span>I</span>n
+        </div>
+
+        <form action = "" method = POST>
+            {% csrf_token %}
+            <div class="input">
+                Enter Login-ID <input type = 'text' name = login_id>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="input">
+                Enter Password <input type = 'password' name = password>
+            </div>
+
+            <div class="remember-me">
+                <input type="checkbox">
+                <span style="color: #DDD">Remember Me</span>
+            </div>
+
+            <input type = "submit" name = 'Submit'>
+        </form>
+        <!--
+        <div class="forgot-password">
+            <a href="#">Forgot your password?</a>
+        </div>
+        <div class="privacy">
+            <a href="#">Privacy Policy</a>
+        </div>
+
+        <div class="register">
+            Don't have an account yet?
+            <a href="register.html"><button id="register-link">SignUp</button></a>
+        </div>
+    </div>
+    -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'web4.css' %}">
+  <title>THe Upload Page</title>
+
+ <style>
+           input {
+            padding: 5px;
+            border-radius: 5px;
+            margin: none;
+          }
+
+          button
+           {
+      			width: 65%;
+      			cursor: pointer;
+      			font-size: 17px;
+            }
+
+            form {
+        			padding: 10px;
+        			font-family: arial;
+        			border: 1px;
+        			margin: 10px;
+              font-size: 15px;
+        		}
+
+            h1 {
+              text-align: center;
+              padding: 10px;
+              border-radius: 10px;
+              width: 25%;
+
+            }
+
+  </style>
+</head>
+<body bgcolor=#a35d6a>
+      <!-- Header -->
+      <section id="header">
+        <div class="header container">
+          <div class="nav-bar">
+            <div class="brand">
+              <a href="http://127.0.0.1:8000/"><h1><span>e</span>Vantage</h1></a>
+            </div>
+            <div class="nav-list">
+              <div class="hamburger"><div class="bar"></div></div>
+              <ul>
+                {% if username %}
+                <li><p>Hello {{ username }}!</p></li>
+                {% endif %}
+                <li><a href="http://127.0.0.1:8000/" data-after="Home">Home</a></li>
+                <li><a href="/uploads" data-after="Service">Upload</a></li>
+               
+                  <li><a href="/result" data-after="result">Result</a></li>
+				 <li><a href="/home" data-after="About">About</a></li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Header -->
+
+
+  <!-- form section -->
+  <section id ="form">
+      <div class="form container">
+
+
+                <form method="post" enctype="multipart/form-data">
+
+
+                      <h1 class="section-title">Upload <span>f</span>ile</h1>
+                            {% csrf_token %}
+                            {{ form.user_name }}
+                            <br>
+                            {{ form.file_name }}
+                            <br>
+                            <h3>File should be of .xlsx type :)</h3>
+                            <br>
+                            {{ form.file_upload }}
+                      	<button class="submit-btn" type="submit"> Submit</button>&nbsp &nbsp
+
+               </form>
+      </div>
+	</section>
+
+
+
+
+
+
+
+      <!-- Footer -->
+      <section id="footer">
+        <div class="footer container">
+          <div class="brand"><h1><span>e</span>Vantage</div>
+          <h2>Your Complete Attrition Solution</h2>
+          <div class="social-icon">
+            <div class="social-item">
+              <a href="#"><img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png"/></a>
+            </div>
+            <div class="social-item">
+              <a href="#"><img src="https://www.iconsdb.com/icons/preview/black/instagram-xxl.png"/></a>
+            </div>
+            <div class="social-item">
+              <a href="#"><img src="https://www.flaticon.com/svg/static/icons/svg/124/124021.svg"/></a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- End Footer -->
+    </body>
+    </html>
