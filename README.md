@@ -5,8 +5,7 @@
 ### This is a project which focuses on Attrition Rate among employees in any organisation and how to find sentiments among the employees in relation to the organisation in which they work.
 
 A `(django-backend)` website is build in which people can answer some basic questions that will help in finding sentiments and if they are positive or not. A file can be uploaded
-by HR department employee or the Employer himself/herself through which I would predict the **Attrition Rate** among employees and show the result on the website itself. Through 
-the questions then the employer can find out where the organisation lacks and th reasoning behind the attrition rate(if it is high).
+by HR department employee or the Employer himself/herself through which I would use to predict the **Attrition Rate** among employees and show the result on the website itself. Through the questions then the employer can find out where the organisation lacks and th reasoning behind the attrition rate(if it is high).
 
 ## For the working of the website:
 - A person most probably Employer or HR directive will access to login into the account made for him/her.
@@ -21,3 +20,6 @@ The last is the result page where the result of the data processing is shown(bot
 
 **IMPORTANT**:
 README.txt has directives as to how to use this project's code and train model(used in sentiment analysis) using the provided data.
+
+**Update**:
+The website has been modified so that now the user can can fill up a form asking for details on an employee which is used to determine if the person would attrite. Note this is different since instead of batch - processing for data that was uploaded by Employer/ HR for finding Attrtion among employees here we take-in single employee' data and find if he/she would attrite.
