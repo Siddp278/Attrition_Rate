@@ -23,3 +23,5 @@ README.txt has directives as to how to use this project's code and train model(u
 
 **Update**:
 The website has been modified so that now the user can can fill up a form asking for details on an employee which is used to determine if the person would attrite. Note this is different since instead of batch - processing for data that was uploaded by Employer/ HR for finding Attrtion among employees here we take-in single employee' data and find if he/she would attrite.
+
+**NOTE**: The website is not deployed as the free version of heroku doesn't provide the necessity resources to run this particular site.
